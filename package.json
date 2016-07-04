@@ -1,0 +1,27 @@
+{
+  "name": "ux-test-ml",
+  "version": "1.0.0",
+  "description": "Ux widget exercise for mercado libre",
+  "main": "index.js",
+  "dependencies": {
+    "chico": "^2.0.6",
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^2.0.10",
+    "gulp-minify": "0.0.12",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "test.js"
+  },
+  "keywords": [
+    "UX",
+    "Test",
+    "Widget",
+    "Mercado",
+    "Libre"
+  ],
+  "author": "Matías Ríos",
+  "license": "ISC"
+}

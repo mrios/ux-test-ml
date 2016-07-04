@@ -1,0 +1,162 @@
+/* Main layout
+---------------------------------------------------------------*/
+#main{
+    box-sizing:border-box;
+    font-size: 13px;
+    line-height: 20px;
+    margin:0 auto;
+    max-width: 1280px;
+    padding: 10px;
+    width:100%;
+}
+
+header {
+    text-align: left;
+
+    h1 {
+        font-size: 3.5em;
+        text-transform:capitalize;
+        letter-spacing: -1px;
+        line-height: 1em;
+        margin-bottom: 5px;
+    }
+}
+
+#productOffer {
+    margin-top: 15px;
+
+    #productImage {
+        .img-responsive {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+    }
+
+    #productInfo {
+
+        .ch-rightcolumn {
+            padding: 0 40px;
+
+            legend {
+                display: none;
+            }
+
+            .price{
+                font-size: 2.8em;
+                letter-spacing: -1px;
+                padding-bottom: 5px;
+                vertical-align: top;
+                color: #900;
+            }
+
+            fieldset {
+                padding: 5px 0;
+
+                .ch-btn {
+                    margin-top: 15px;
+                    padding: 10px 20px;
+                }
+            }
+
+            .ch-form-row {
+                height: 20px;
+
+                label {
+                    width: 80px;
+                    text-align: left;
+                }
+            }
+
+            .info {
+                color: #666;
+            }
+        }
+    }
+}
+
+hr {
+    border-bottom: 1px solid #ddd;
+    margin: 25px 0 5px;
+}
+
+#carouselWrapper {
+    margin-top: 15px;
+    padding: 10px 0;
+
+    h1 {
+        font-size: 2.3em;
+    }
+
+    .ch-carousel {
+        overflow: hidden;
+        padding: 10px;
+
+        img {
+            margin-top: 15px;
+            max-width: 120px;
+            border: 1px solid #ddd;
+        }
+
+        /* fix to hide broken chico.min.js accord to problem */
+        .ch-carousel-pages {
+            display: none;
+        }
+    }
+
+}
+
+#tabsInfo{
+    .tabs {
+        position: relative;   
+        min-height: 240px;
+        clear: both;
+        margin: 38px 0;
+    }
+    .tab {
+        float: left;
+
+        label {
+            background: #eee; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            margin-left: -1px; 
+            position: relative;
+            left: 1px; 
+      }
+
+        input[type=radio]{
+            display: none;   
+        }
+    }
+    .content {
+        position: absolute;
+        top: 28px;
+        left: 0;
+        background: white;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        border: 1px solid #ccc;
+
+        h3 {
+            &.ok{
+                color:#468847;
+            }
+            &.info{
+                color:#3a87ad;
+            }
+        }
+    }
+
+    input[type=radio]{
+        &:checked ~ label{
+            background: white;
+          border-bottom: 1px solid white;
+          z-index: 2;
+        }
+        &:checked ~ label ~ .content{
+             z-index: 1;
+        }
+    }
+}
